@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Vintage TV template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Vintage TV Template" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="None" />
+    <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
+    <script>
+      ! function(A) {
+        "use strict";
+
+        function e(A, e, n) {
+          const o = function(A) {
+            return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+          }(A);
+          if (null === o) {
+            const t = new Image;
+            return t.onload = t.onerror = function() {
+              n(A, 2 === t.height)
+            }, void(t.src = e)
+          }
+          t(A, o)
+        }
+
+        function t(e, t) {
+          t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+        }
+        e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+      }(document);
+    </script>
+    <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>James Tan|Home</title>
+  </head>
+  <body class="cursor-default">
+    <div class="space">
+      <div class="stars"></div>
+      <div class="spaceship">
+        <div class="tv js-tv">
+          <div class="tv-screen js-screen">
+            <div class="tv-effects">
+              <div class="tv-effect --decontrast"></div>
+              <div class="tv-effect --static"></div>
+              <div class="tv-effect --artifacts"></div>
+              <div class="tv-effect --vignette"></div>
+              <div class="tv-effect --crt"></div>
+            </div>
+            <div class="tv-content js-content">
+              <a class="skip-link" href="#content">Skip to content</a>
+              <div class="page-container glitchy-text">
+                <header class="header">
+                  <div class="header__container">
+                    <nav class="nav" js-slot="nav">
+                      <ul class="nav__breadcrumb">
+                        <li>JT</li>
+                      </ul>
+                      <ul class="nav__menu">
+                        <li>
+                          <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                          <a>Version 1</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="header__info">
+                      <div class="js-header-date">NOV 14, 2022</div>
+                      <div class="js-header-controls"></div>
+                      <noscript>
+                        <div role="button">CHANNEL 00</div>
+                      </noscript>
+                    </div>
+                  </div>
+                </header>
+                <div class="page-content" id="content" js-slot="content">
+                  <article class="bio">
+                    <p class="big-text" style="color:#a0a0a0"> 
+                      Hello! I am James Tan and welcome to my personal website.
+                      <br></br>
+                      I'm an aspiring coder and student living in Singapore
+                    </p>
+                  </article>
+                </div>
+                <footer class="footer" id="footer">
+                  <ul class="link-list">
+                    <li>
+                      <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/chaoxys/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
+                    </li>
+                    <li>
+                      <a href="mailto:tan_yu_kai_james@s2022.ssts.edu.sg" rel="noopener noreferrer" target="_blank"> EMAIL </a>
+                    </li>
+                  </ul>
+                  <div class="js-space-trigger"></div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="js-remote"></div>
+    <script>
+      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      }).format(new Date);
+    </script>
+    <script async type="module" src="assets/main.js"></script>
+  </body>
+</html>

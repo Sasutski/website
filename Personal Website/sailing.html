@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Coding for humans. Come say hi 🌳" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:site_name" content="James Tan | Open Source" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://sasutski.github.io" />
+    <!-- from https://github.com/yaushing/yaushing.github.io/blob/main/projects.html -->
+    <script>
+      ! function(A) {
+        "use strict";
+
+        function e(A, e, n) {
+          const o = function(A) {
+            return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+          }(A);
+          if (null === o) {
+            const t = new Image;
+            return t.onload = t.onerror = function() {
+              n(A, 2 === t.height)
+            }, void(t.src = e)
+          }
+          t(A, o)
+        }
+
+        function t(e, t) {
+          t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+        }
+        e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+      }(document);
+    </script>
+    <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>James Tan|Sailing </title>
+  </head>
+  <body class="cursor-default">
+    <div class="space">
+      <div class="stars"></div>
+      <div class="spaceship">
+        <div class="tv js-tv">
+          <div class="tv-screen js-screen">
+            <div class="tv-effects">
+              <div class="tv-effect --decontrast"></div>
+              <div class="tv-effect --static"></div>
+              <div class="tv-effect --artifacts"></div>
+              <div class="tv-effect --vignette"></div>
+              <div class="tv-effect --crt"></div>
+            </div>
+            <div class="tv-content js-content">
+              <a class="skip-link" href="#content">Skip to content</a>
+              <div class="page-container glitchy-text">
+                <header class="header">
+                  <div class="header__container">
+                    <nav class="nav" js-slot="nav">
+                      <ul class="nav__breadcrumb">
+                        <li>
+                          <a href="index.html">JT</a>
+                        </li>
+                      </ul>
+                      <ul class="nav__menu">
+                        <li>
+                          <a href="portfolio.html">Back to Portfolio</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="header__info">
+                      <div class="js-header-date">NOV 14, 2022</div>
+                      <div class="js-header-controls"></div>
+                      <noscript>
+                        <div role="button">CHANNEL 00</div>
+                      </noscript>
+                    </div>
+                  </div>
+                </header>
+                <div class="page-content" id="content" js-slot="content">
+                  <article class="bio">
+                    <p class="big-text" style="color:#a0a0a0"> 
+                      <br>Sailing Achievements</br>
+                    </p>
+                    <p class="small-text" style="color:#ff0000">
+                      <h2>Singapore National Sailing Championship 2019 (Silver Fleet) 39th</h2>
+                      <h3>
+                        <ul>
+                          <li>Race 2: 18th place</li>
+                          <li>Race 5: 16th place</li>
+                        </ul>
+                      </h3>
+                      <h2><br></br></h2>
+                      <h2>NSC Cup Series 2 2018 (Silver Fleet) 53rd</h2>
+                      <h3>
+                        <ul>
+                          <li>Race 9: 14th place</li>
+                        </ul>
+                      </h3>
+                      <h2><br></br></h2>
+                      <h2>NSC Cup Series 2 2019 (Silver Fleet) 30th out of 66</h2>
+                      <h3>
+                        <ul>
+                          <li>Race 4: 20th Place</li>
+                          <li>Race 5: 16th Place</li>
+                        </ul>
+                      </h3>
+                    </p>
+                    </p>
+                  </article>
+                </div>
+                <footer class="footer" id="footer">
+                  <ul class="link-list">
+                    <li>
+                      <a></a>
+                    </li>
+                  </ul>
+                  <div class="js-space-trigger"></div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="js-remote"></div>
+    <script>
+      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      }).format(new Date);
+    </script>
+    <script async type="module" src="assets/main.js"></script>
+  </body>
+</html>
