@@ -927,11 +927,6 @@
       /* Presentational styles */
       a {
         color: #54b3d6;
-        font-family: 'Poppins', sans-serif;
-        font-size: 27px;
-        font-weight: 700;
-        line-height: 1.5;
-        text-decoration: none;
       }
       
       body {
