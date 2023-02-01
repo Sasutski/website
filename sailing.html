@@ -5,10 +5,10 @@
     <meta name="description" content="Coding for humans. Come say hi 🌳" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <meta property="og:site_name" content="James Tan | Sailing" />
+    <meta property="og:site_name" content="James Tan | Credits" />
     <meta property="og:locale" content="en_US" />
-    <meta property="article:author" content="https://sasutski.github.io" />
-    <!-- from https://github.com/yaushing/yaushing.github.io/blob/main/projects.html -->
+    <meta property="article:author" content="https://yaushing.github.io" />
+    <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
     <script>
       ! function(A) {
         "use strict";
@@ -60,12 +60,13 @@
                         <li>
                           <a href="index.html">JT</a>
                         </li>
+                        <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="sailing"> Sailing </li>
                       </ul>
-                      <ul class="nav__menu">
-                        <li>
-                          <a href="portfolio.html">Back to Portfolio</a>
-                        </li>
-                      </ul>
+                        <ul class="nav__menu">
+                          <li>
+                            <a href="portfolio.html">Back to Portfolio</a>
+                          </li>
+                        </ul>
                     </nav>
                     <div class="header__info">
                       <div class="js-header-date">NOV 14, 2022</div>
@@ -77,7 +78,9 @@
                   </div>
                 </header>
                 <div class="page-content" id="content" js-slot="content">
-                  <article class="bio">
+                  <p class="big-text" style="color:#a0a0a0"> Sailing has helped James with understanding and predicting forces of nature while deciding the course of action he should take. It helped him calm his mind and think before acting, thus helping him improve his thinking process and speed.</p>
+                  <br>
+                  <article>
                     <p class="big-text" style="color:#a0a0a0"> 
                       <br>Sailing Achievements</br>
                     </p>
@@ -122,10 +125,10 @@
                 <footer class="footer" id="footer">
                   <ul class="link-list">
                     <li>
-                      <a href="https://www.instagram.com/chaoxys/">INSTAGRAM</a>
+                      <a href="https://instagram.com/chaoxys/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
                     </li>
                     <li>
-                      <a href="mailto:tan_yu_kai_james@s2022.ssts.edu.sg">EMAIL</a>
+                      <a href="mailto:tan_yu_kai_james@s2022.ssts.edu.sg" rel="noopener noreferrer" target="_blank"> EMAIL </a>
                     </li>
                   </ul>
                   <div class="js-space-trigger"></div>
@@ -137,13 +140,18 @@
       </div>
     </div>
     <div class="js-remote"></div>
-    <script>
-      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric"
-      }).format(new Date);
-    </script>
     <script async type="module" src="assets/main.js"></script>
+    <!-- Panelbear -->
+    <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+    <script>
+      window.panelbear = window.panelbear || function() {
+        (window.panelbear.q = window.panelbear.q || []).push(arguments);
+      };
+      panelbear('config', {
+        site: '4Tucg4KASiw'
+      });
+    </script>
+    <script src="assets/eff.js"/>
+    <script src="assets/remote.js"/>
   </body>
 </html>
