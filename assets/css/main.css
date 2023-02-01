@@ -574,7 +574,7 @@ html{
     line-height:var(--line-height)
 }
 body{
-    background-color:#000;
+    background-color:rgb(255, 0, 0);
     overflow:hidden
 }
 .space,.spaceship,.tv,.tv-content,.tv-screen,body,html{
@@ -595,7 +595,7 @@ body.hide-content .page-container{
 .glitchy-text{
     --shadow-x-distance:2px;
     --shadow-y-distance:1px;
-    text-shadow:var(--shadow-x-distance) var(--shadow-y-distance) 0 rgba(2,183,182,.4),calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgba(183,2,2,.4);
+    text-shadow:var(--shadow-x-distance) var(--shadow-y-distance) 0 rgb(6, 255, 255),calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgb(255, 0, 0);
     text-shadow:var(--shadow-x-distance) var(--shadow-y-distance) 0 var(--glitchy-white),calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 var(--glitchy-red)
 }
 @media (min-width:481px){
