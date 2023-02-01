@@ -4,7 +4,10 @@ Added Easter Egg into code.
 
 ## Version 1.2.8
 Updated Grammar in text
+
 Updated Credits
+
+Added Panelbear
 
 ## Version 1.2.7
 Added News
