@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Vintage TV template" />
+    <meta name="description" content="Coding for humans. Come say hi 🌳" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <meta property="og:site_name" content="James Tan" />
+    <meta property="og:site_name" content="KYS | Random Fact" />
     <meta property="og:locale" content="en_US" />
-    <meta property="article:author" content="None" />
+    <meta property="article:author" content="https://yaushing.github.io" />
     <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
     <script>
       ! function(A) {
@@ -34,8 +34,8 @@
     </script>
     <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" href="assets/photos/Favicon.png" />
-    <title>James Tan | Credits</title>
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>James Tan | Credits </title>
   </head>
   <body class="cursor-default">
     <div class="space">
@@ -57,9 +57,10 @@
                   <div class="header__container">
                     <nav class="nav" js-slot="nav">
                       <ul class="nav__breadcrumb">
-                        <li><a href="index.html">JT</a></li>
-                      </ul>
-                      <ul class="nav__menu">
+                        <li>
+                          <a href="index.html">JT</a>
+                        </li>
+                        <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="Credits"> Credits </li>
                       </ul>
                     </nav>
                     <div class="header__info">
@@ -72,23 +73,27 @@
                   </div>
                 </header>
                 <div class="page-content" id="content" js-slot="content">
-                  <article class="bio">
-                    <p class="big-text" style="color:#a0a0a0"> 
-                      Credits
-                      <br></br>
+                  <p class="big-text" style="color:#a0a0a0"> Here are the credits to people who have helped James with the creation of this website. </p>
+                  <br>
+                  <article>
+                    <p class="big-text" style="color:#a0a0a0">
+                        <a href="https://github.com/yaushing">Kam Yau Shing</a>
                     </p>
                     <p class="medium-text" style="color:#a0a0a0">
-                      
+                        Yau Shing has helped me build this website by providing me the template for this. When my code does not work he helps me with it and it usually works.
                     </p>
                   </article>
                 </div>
                 <footer class="footer" id="footer">
                   <ul class="link-list">
                     <li>
-                      <a href="https://www.instagram.com/chaoxys/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
+                      <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
                     </li>
                     <li>
-                      <a href="mailto:tan_yu_kai_james@s2022.ssts.edu.sg" rel="noopener noreferrer" target="_blank"> EMAIL </a>
+                      <a href="https://instagram.com/jkys11257/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
+                    </li>
+                    <li>
+                      <a href="mailto:kam.yaushing@gmail.com" rel="noopener noreferrer" target="_blank"> EMAIL </a>
                     </li>
                   </ul>
                   <div class="js-space-trigger"></div>
@@ -100,13 +105,18 @@
       </div>
     </div>
     <div class="js-remote"></div>
-    <script>
-      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric"
-      }).format(new Date);
-    </script>
     <script async type="module" src="assets/main.js"></script>
+    <!-- Panelbear -->
+    <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+    <script>
+      window.panelbear = window.panelbear || function() {
+        (window.panelbear.q = window.panelbear.q || []).push(arguments);
+      };
+      panelbear('config', {
+        site: '4Tucg4KASiw'
+      });
+    </script>
+    <script src="assets/eff.js"/>
+    <script src="assets/remote.js"/>
   </body>
 </html>
