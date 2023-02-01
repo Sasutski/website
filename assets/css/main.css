@@ -287,7 +287,7 @@ html.webp .button-text,html.webp a{
     background-size:cover
 }
 .bio__photo:focus:after,.bio__photo:hover:after{
-    background-image:url(../../assets/images/me.jpg);
+    background-image:url(../../assets/photos/me.jpeg);
     transition:visibility 0s .2s;
     visibility:visible
     
