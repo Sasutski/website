@@ -1,4 +1,13 @@
 # James Tan Personal Website
+## Version 1.2.8
+- Updated Credits Page
+
+- Added Panelbear
+
+- Updated photo of me
+
+- Fixed Grammar Mistakes pointed out
+
 ## Version 1.2.7
 Added News
 
