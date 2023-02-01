@@ -1,0 +1,42 @@
+#background {
+    height: 100%;
+    width: 100%;
+}
+
+#makeBackgroundFullScreen{
+    background-color:black;
+    margin-top:100%;
+}
+
+#buyShop{
+    margin-left:50%;
+    margin-right:50%;
+}
+
+.whiteText{
+    color:white;
+}
+
+.whiteBackground{
+    background-color:rgb(0, 0, 0);
+}
+
+.blackBackground{
+    background-color:black;
+}
+
+.redBackground{
+    background-color:red;
+}
+
+.blueBackground{
+    background-color:blue;
+}
+
+.greenBackground{
+    background-color:green;
+}
+
+.greenColour{
+    color;green;
+}

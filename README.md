@@ -1,4 +1,11 @@
 # James Tan Personal Website
+## Version 1.2.9
+Added Easter Egg into code.
+
+## Version 1.2.8
+Updated Grammar in text
+Updated Credits
+
 ## Version 1.2.7
 Added News
 
