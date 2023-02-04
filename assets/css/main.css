@@ -344,28 +344,6 @@ html.webp .playlist-img:before{
     color:var(--text-primary);
     font-size:2vw;
 }
-.awards-list{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-gap:3.4rem;
-    gap:3.4rem
-}
-.awards-list a{
-    font-size:2vw;
-    line-height:1;
-    text-transform:uppercase
-}
-.awards-list small{
-    display:block;
-    color:#a0a0a0;
-    color:var(--text-primary);
-    font-size:2vw;
-}
-@media (min-width:580px){
-    .project-list{
-        grid-template-columns:1fr 1fr
-    }
-}
 .tv{
     position:relative;
     background-color:#000;

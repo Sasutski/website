@@ -1,4 +1,10 @@
 # James Tan Personal Website
+
+## Version 1.3
+Removed Content Editable for the Page Title
+
+Added Awards pages which is accesible through the portfolio page
+
 ## Version 1.2.9
 Added Easter Egg into code.
 
